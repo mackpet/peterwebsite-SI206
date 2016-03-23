@@ -1,0 +1,23 @@
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+header{
+	background-color: red;
+}
+
+h1 {
+	display: inline-block;
+}
+
+nav{
+	float: right;
+	padding-right: 3%;
+	padding-top: 1%;
+}
+
+ul li{
+	display: inline-block;
+}
+
+/* horizontally center an element- margin: 0 auto;
+slide 63 of CSS ppt

@@ -1,0 +1,27 @@
+{% extends "templates/base.html" %}
+
+{% block head %}
+	<title>Peter - PHOTOS</title>
+{% endblock %}
+
+{% block title %}
+	<h2>Photos</h2>
+{% endblock %}
+
+{% block content %}
+<p>This is my photo gallery. Check out my Instagram feed!</p>
+
+<script type="text/javascript" src="static/instafeed.min.js"></script>
+<div id="instafeed"></div>
+<script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: '524198678',
+        accessToken: '524198678.1677ed0.49ed0356f0214612bf437821dbfcbd1d',
+        count: -1
+    });
+    userFeed.run();
+</script>
+      
+
+{% endblock %}

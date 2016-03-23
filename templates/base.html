@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	{% block head %}
+	<title>Peter</title>
+	{% endblock %}
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="static/styling.css">
+</head>
+
+<body>
+	<header>
+	<h1>Peter Mack</h1>
+
+	<nav>
+		<ul class="nav nav-tabs">
+		<li id="Home"><a href="index.html">Home</a></li>
+		<li id="Photos"><a href="photos.html">Photos</a></li>
+		<li id="About"><a href="aboutme.html">About Me</a></li>
+		<li id="Login"><a href="login.html">Login</a></li>
+		</ul>
+	</nav>
+
+	</header>
+	{% block title %}
+	Title goes here.
+	{% endblock %}
+
+	{% block content %}
+	The actual content of each page.
+	{% endblock %}
+	<footer>
+		<p>&copy; 2016 
+		<a href="https://www.facebook.com/peter.mack.378" target = "_blank">
+			<img src="static/socialicons/fb-white.png" alt="Facebook" onmouseover="this.src='static/socialicons/fb-black.png';" onmouseout="this.src='static/socialicons/fb-white.png';">
+		</a>
+		<a href="https://twitter.com/PMack9" target = "_blank">
+			<img src="static/socialicons/twitter-white.png" alt="Twitter" onmouseover="this.src='static/socialicons/twitter-black.png';" onmouseout="this.src='static/socialicons/twitter-white.png';">
+		</a>
+		<a href="https://www.instagram.com/pmack9/" target = "_blank">
+			<img src="static/socialicons/instagram-white.png" alt="Instagram" onmouseover="this.src='static/socialicons/instagram-black.png';" onmouseout="this.src='static/socialicons/instagram-white.png';">
+		</a>
+		<a href="mailto:pjmack@umich.edu" target = "_blank">
+			<img src="static/socialicons/mail-white.png" alt="Email" onmouseover="this.src='static/socialicons/mail-black.png';" onmouseout="this.src='static/socialicons/mail-white.png';">
+		</a>
+		</p>
+	</footer>
+</body>
+
+<script type= "text/javascript" src="static/currentpage.js"></script>
+
+</html>

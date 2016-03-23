@@ -1,0 +1,20 @@
+{% extends "templates/base.html" %}
+
+{% block head %}
+	<title>Peter - LOGIN</title>
+{% endblock %}
+
+{% block title %}
+	<h2>Login</h2>
+{% endblock %}
+
+{% block content %}
+<form action="/success.html" method="post">
+	<label>Username: <input type = "text" name = "username"></label>
+	<label>Password: <input type = "password" name = "password"></label>
+	<input type = "submit" value = "Login">
+</form>
+
+{% endblock %}
+
+
