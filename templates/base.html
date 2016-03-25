@@ -26,22 +26,29 @@
 	<h1>Peter Mack</h1>
 
 	<nav>
-		<ul class="nav nav-tabs">
-		<li id="Home"><a href="index.html">Home</a></li>
-		<li id="Photos"><a href="photos.html">Photos</a></li>
-		<li id="About"><a href="aboutme.html">About Me</a></li>
-		<li id="Login"><a href="login.html">Login</a></li>
+		<ul class="nav nav-pills no-bg-color">
+		<li id="Home"><a href="index.html">HOME</a></li>
+		<li id="Photos"><a href="photos.html">PHOTOS</a></li>
+		<li id="About"><a href="aboutme.html">ABOUT ME</a></li>
+		<li id="Login"><a href="login.html">LOGIN</a></li>
 		</ul>
 	</nav>
-
 	</header>
+
+	<div class="wrapper">
 	{% block title %}
 	Title goes here.
 	{% endblock %}
 
+
 	{% block content %}
 	The actual content of each page.
 	{% endblock %}
+
+	</div>
+	
+	<div class="footer navbar-fixed-bottom">
+
 	<footer>
 		<p>&copy; 2016 
 		<a href="https://www.facebook.com/peter.mack.378" target = "_blank">
@@ -58,6 +65,7 @@
 		</a>
 		</p>
 	</footer>
+	</div>
 </body>
 
 <script type= "text/javascript" src="static/currentpage.js"></script>

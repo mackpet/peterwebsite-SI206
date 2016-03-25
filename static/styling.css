@@ -2,11 +2,12 @@ body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 header{
-	background-color: red;
-}
-
-h1 {
-	display: inline-block;
+	background-color: #666666;
+	position: fixed;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	z-index: 1;
 }
 
 nav{
@@ -14,10 +15,63 @@ nav{
 	padding-right: 3%;
 	padding-top: 1%;
 }
-
-ul li{
-	display: inline-block;
+a{
+	color: white;
 }
 
+h1 {
+	display: inline-block;
+	float: center;
+}
+
+h1:hover{
+	color: blue;
+}
+
+.nav-pills>li.active>a {
+	background-color: #666666;
+	color: #00CCFF
+}
+.nav-pills>li>a:hover {
+	background-color: #666666;
+}
+.nav-pills>li.active>a:hover {
+	background-color: #666666;
+}
+li {
+	font-size: 16px;
+}
+
+.wrapper{
+	min-height: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 7% 0 10%;
+}
+
+#instafeed { 
+	padding: 1% 1% 1% 1%;
+}
+
+#instafeed img{
+	padding: 0.5% 0.5% 0.5% 0.5%;
+	opacity: 0.85;
+
+}
+
+#instafeed img:hover{
+	opacity: 1;
+}
+
+.navbar-fixed-bottom{
+	margin-top: -3%;
+	position: center;
+	padding-top: 1%;
+	background-color: #006699;
+}
+
+footer a:hover{
+	text-decoration: none;
+}
 /* horizontally center an element- margin: 0 auto;
 slide 63 of CSS ppt

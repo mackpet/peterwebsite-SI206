@@ -1,3 +1,13 @@
+ <!--style tag is necessary for background here since it is only on index page-->
+<style type="text/css">
+body{
+	background: url("static/peru.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+</style>
 {% extends "templates/base.html" %}
 
 {% block head %}
@@ -9,5 +19,5 @@
 {% endblock %}
 
 {% block content %}
-<p>Welcome to my webpage. I am a current sophomore at the University of Michigan in the College of Literature, Science, and the Arts. I created this website as a personal portfolio for my Interactive Web Design Class. Learn more about me <a href="aboutme.html">here</a></p>
+<p>Welcome to my webpage. I am a current sophomore at the University of Michigan in the College of Literature, Science, and the Arts. I created this website as a personal portfolio for my Interactive Web Design Class. Learn more about me <a href="aboutme.html">here</a>
 {% endblock %}
