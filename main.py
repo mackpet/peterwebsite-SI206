@@ -52,7 +52,7 @@ app = webapp2.WSGIApplication([
     ('/index.html', Handler),
     ('/aboutme.html', Handler),
     ('/photos.html', Handler),
-    ('/login.html', Handler),
+    ('/resume.html', Handler),
     ('/*', Handler)
 ], debug=True)
 

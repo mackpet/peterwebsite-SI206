@@ -10,8 +10,8 @@ var currentLink = function(){
 	else if (currentPage == "aboutme.html"){
 		document.getElementById('About').className = "active";
 	}
-	else if (currentPage == "login.html"){
-		document.getElementById('Login').className = "active";
+	else if (currentPage == "resume.html"){
+		document.getElementById('Resume').className = "active";
 	}
 	else{
 		document.getElementById('Home').className = "active";

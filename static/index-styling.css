@@ -9,3 +9,15 @@ h1{
 	color: white;
 	font-size: 100px;
 }
+h2 {
+	float: left;
+	margin-top: 1%;
+	color: #FFFFFF;
+	font-size: 60px;
+}
+
+@media only screen and (max-width: 640px){
+	h1 {
+		font-size: 40px;
+	}
+}

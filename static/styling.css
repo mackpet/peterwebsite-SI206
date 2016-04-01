@@ -1,14 +1,18 @@
 body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: #f0eceb
 }
 header{
-	background-color: #666666;
+	background-color: #283018;
 	position: fixed;
 	width: 100%;
 	padding: 0;
 	z-index: 1;
 }
-#hamburger {
+.mobile-header {
+	display: none;
+}
+#checkbox {
 	display: none;
 }
 
@@ -17,7 +21,7 @@ nav {
 	text-align: center;
 }
 a{
-	color: white;
+	color: #aa863a;
 }
 h1{
 	color: white;
@@ -25,18 +29,21 @@ h1{
 	font-size: 100px;
 }
 h2{
+	text-align: center;
 	margin-top: 7%;
 }
 
 .nav-pills>li.active>a {
-	background-color: #666666;
-	color: #00CCFF
+	background-color: #283018;
+	color: white;
 }
 .nav-pills>li>a:hover {
-	background-color: #666666;
+	background-color: #283018;
+	color: #FF9900;
 }
 .nav-pills>li.active>a:hover {
-	background-color: #666666;
+	background-color: #283018;
+	color: #FF9900;
 }
 nav li {
 	font-size: 24px;
@@ -58,8 +65,9 @@ nav li {
 	margin: 1% 1% 1% 1%;
 	opacity: 0.85;
 	box-shadow: 2px 2px 5px #666666;
-	border: 0.5px black;
-
+	border-style: solid;
+	border-color: #CCCCCC;
+	border-width: 1px;
 }
 
 #instafeed img:hover{
@@ -73,7 +81,7 @@ nav li {
 	margin-top: -3%;
 	position: center;
 	padding-top: 1%;
-	background-color: #006699;
+	background-color: #283018;
 }
 
 footer a:hover{
@@ -85,44 +93,81 @@ footer {
 	text-align: center;
 }
 
-label {  
-  cursor: pointer;
-}
-
 iframe{
 	border: none;
+}
+	
+#photo-intro{
+	text-align: center;
+}
+
+.location{
+	float: right;
+	display: inline;
+}
+
+.resume{
+	max-width: 70%;
+	margin: 0 auto;
+}
+.resume-title{
+	text-align: center;
 }
 
 @media only screen and (max-width: 800px){
 	h1 {
-		text-align: center;
+		display: none;
+	}
+	h2{
+		padding-top: 30px;
 	}
 
-	#hamburger {
+	.mobile-header{
 		display: inline-block;
+		padding-top: 10px;
+		float: right;
+		margin-right: 30px;
+		color: #aa863a;
 	}
 	nav ul, nav:active ul { 
 		display: none;
 	}
 	nav li {
 		text-align: center;
-		width: 100%;
+		width: auto;
 		margin: 0;
-
+		font-size: 18px;
+		padding: 0px;  
 	}
-
-	nav:hover ul {
-		display: block;
+	#header-name{
+		font-size: 20px;
+		color: white;
+		float: left;
+		margin-left: 30px;
+		padding-top: 5px;	
 	}
-
+	.glyphicon {
+		font-size: 20px;
+	}
+	#checkbox:checked ~ ul {
+		display: inline-block;
+		-webkit-touch-callout: none; /* iOS Safari */
+  		-webkit-user-select: none;   /* Chrome/Safari/Opera */
+  		-khtml-user-select: none;    /* Konqueror */
+  		-moz-user-select: none;      /* Firefox */
+  		-ms-user-select: none;       /* IE/Edge */
+  		user-select: none;  
+	}
+	#last{
+		padding-bottom: 5em;
+	}
+	.wrapper {
+		margin: 0px 14px 14px 0px;
+	}
+	#title{
+		padding-top: 50px;
+	}
 }
-
-@media screen and (max-width: 640px){
-	h1 {
-		font-size: 50px;
-	}
-}
-
 
 
 /* horizontally center an element- margin: 0 auto;
