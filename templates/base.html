@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	{% block head %}
 	<title>Peter</title>
 	{% endblock %}
@@ -28,7 +28,7 @@
 <body>
 	<header>
 	<nav>
-		<p id="header-name" class="mobile-header">PETER MACK</p>
+		<a id="header-name" class="mobile-header" href="index.html">PETER MACK</a>
 		<input type="checkbox" id="checkbox" class="mobile-header">
 		<label for="checkbox" class="glyphicon glyphicon-menu-hamburger mobile-header"></label>
 
@@ -54,11 +54,11 @@
 	
 	<div class="footer navbar-fixed-bottom">
 	<footer>
-		<a href="https://www.facebook.com/peter.mack.378" target = "_blank"><i class="fa fa-3x fa-facebook"></i></a>
-		<a href="https://twitter.com/PMack9" target = "_blank"><i class="fa fa-3x fa-twitter"></i></a>
-		<a href="https://www.instagram.com/pmack9/" target = "_blank"><i class="fa fa-3x fa-instagram"></i></a>
-		<a href="mailto:pjmack@umich.edu" target = "_blank"><i class="fa fa-3x fa-envelope"></i></a>
-		<a href="https://github.com/mackpet" target="_blank"><i class="fa fa-3x fa-github"></i></a>
+		<a href="https://www.facebook.com/peter.mack.378" target = "_blank"><i class="fa fa-2x fa-facebook"></i></a>
+		<a href="https://twitter.com/PMack9" target = "_blank"><i class="fa fa-2x fa-twitter"></i></a>
+		<a href="https://www.instagram.com/pmack9/" target = "_blank"><i class="fa fa-2x fa-instagram"></i></a>
+		<a href="mailto:pjmack@umich.edu" target = "_blank"><i class="fa fa-2x fa-envelope"></i></a>
+		<a href="https://github.com/mackpet" target="_blank"><i class="fa fa-2x fa-github"></i></a>
 		<br>
 		<p id="copyright">&copy; Peter Mack, 2016</p>
 	</footer>
@@ -69,19 +69,19 @@
 		$(document).ready(function() {
 			var $window = $(window)
 			if ($window.width() < 800){
-				$('.fa').removeClass('fa-3x').addClass('fa-2x');
+				$('.fa').removeClass('fa-2x');
 			};
 			if ($window.width() >= 800){
-				$('.fa').addClass('fa-3x');
+				$('.fa').addClass('fa-2x');
 			};
 		});
 		$(window).on('resize', function(){
 			var $window = $(this)
 			if ($window.width() < 800){
-				$('.fa').removeClass('fa-3x').addClass('fa-2x');
+				$('.fa').removeClass('fa-2x');
 			};
 			if ($window.width() >= 800){
-				$('.fa').addClass('fa-3x');
+				$('.fa').addClass('fa-2x');
 			};
 		});
 	</script>

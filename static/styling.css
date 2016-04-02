@@ -112,8 +112,9 @@ footer {
 #copyright{
 	font-size: 10px;
 }
-.fa-3x{
-	width: 50px;
+.fa{
+	width: 150px;
+	padding-bottom: 5px;
 }
 .fa:hover{
 	color: #FF9900;
@@ -149,7 +150,8 @@ footer {
 		color: white;
 		float: left;
 		margin-left: 30px;
-		padding-top: 5px;	
+		padding-top: 5px;
+		text-decoration: none;	
 	}
 	.glyphicon {
 		font-size: 20px;
@@ -172,6 +174,10 @@ footer {
 	}
 	#copyright {
 		font-size: 8px;
+	}
+	.fa{
+		font-size: 50px;
+		width: 50px;
 	}
 }
 
