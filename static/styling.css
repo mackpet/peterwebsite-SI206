@@ -2,8 +2,23 @@ body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	background-color: #f0eceb
 }
+a{
+	color: #aa863a;
+}
+a:visited{
+	color: #aa863a;
+}
+h1{
+	color: white;
+	margin-top: 7%;
+	font-size: 100px;
+}
+h2{
+	text-align: center;
+	margin-top: 7%;
+}
 
-/*HEADER STYLING*/
+/*Begin header/nav styling*/
 header{
 	background-color: #283018;
 	position: fixed;
@@ -17,24 +32,10 @@ header{
 #checkbox {
 	display: none;
 }
-
 nav {
 	display: block;
 	text-align: center;
 }
-a{
-	color: #aa863a;
-}
-h1{
-	color: white;
-	margin-top: 7%;
-	font-size: 100px;
-}
-h2{
-	text-align: center;
-	margin-top: 7%;
-}
-
 .nav-pills>li.active>a {
 	background-color: #283018;
 	color: white;
@@ -51,17 +52,16 @@ nav li {
 	font-size: 24px;
 }
 
+/*Begin content styling*/
 .wrapper{
 	min-height: 100%;
-	margin: 0% 10% 10% 10%;
+	margin: 0% 10% 5% 10%;
 	padding: 1% 0 1%;
 }
-
 #instafeed { 
 	text-align: center;
-	padding-bottom: 10%;
+	margin-bottom: 7%;
 }
-
 #instafeed img{
 	padding: 1% 1% 1% 1%;
 	margin: 1% 1% 1% 1%;
@@ -71,43 +71,22 @@ nav li {
 	border-color: #CCCCCC;
 	border-width: 1px;
 }
-
 #instafeed img:hover{
 	opacity: 1;
 }
 .spotify{
 	text-align: center;
 }
-
-.navbar-fixed-bottom{
-	margin-top: -3%;
-	position: center;
-	padding-top: 1%;
-	background-color: #283018;
-}
-
-footer a:hover{
-	text-decoration: none;
-}
-
-footer {
-	color: white;
-	text-align: center;
-}
-
 iframe{
 	border: none;
 }
-	
 #photo-intro{
 	text-align: center;
 }
-
 .location{
 	float: right;
 	display: inline;
 }
-
 .resume{
 	max-width: 70%;
 	margin: 0 auto;
@@ -116,6 +95,31 @@ iframe{
 	text-align: center;
 }
 
+/*Begin footer styling*/
+.navbar-fixed-bottom{
+	margin-top: -3%;
+	position: center;
+	padding-top: 1%;
+	background-color: #283018;
+}
+footer a:hover{
+	text-decoration: none;
+}
+footer {
+	color: white;
+	text-align: center;
+}
+#copyright{
+	font-size: 10px;
+}
+.fa-3x{
+	width: 50px;
+}
+.fa:hover{
+	color: #FF9900;
+}
+
+/*See other media query in index-styling.css as well as jQuery function in base.html*/
 @media only screen and (max-width: 800px){
 	h1 {
 		display: none;
@@ -123,7 +127,6 @@ iframe{
 	h2{
 		padding-top: 30px;
 	}
-
 	.mobile-header{
 		display: inline-block;
 		padding-top: 10px;
@@ -160,17 +163,15 @@ iframe{
   		-ms-user-select: none;       /* IE/Edge */
   		user-select: none;  
 	}
-	#last{
-		padding-bottom: 5em;
-	}
 	.wrapper {
-		margin: 0px 14px 14px 0px;
+		margin: 0px 5% 10% 5%;
+		padding-bottom: 50px;
 	}
 	#title{
 		padding-top: 50px;
 	}
+	#copyright {
+		font-size: 8px;
+	}
 }
 
-
-/* horizontally center an element- margin: 0 auto;
-slide 63 of CSS ppt

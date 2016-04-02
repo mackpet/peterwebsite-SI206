@@ -20,12 +20,13 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" type="text/css" href="static/styling.css">
+	<!-- Link to social icons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
 	<header>
-
 	<nav>
 		<p id="header-name" class="mobile-header">PETER MACK</p>
 		<input type="checkbox" id="checkbox" class="mobile-header">
@@ -49,31 +50,40 @@
 	{% block content %}
 	The actual content of each page.
 	{% endblock %}
-
 	</div>
 	
 	<div class="footer navbar-fixed-bottom">
-
 	<footer>
-		<p>&copy; 2016 
-		<a href="https://www.facebook.com/peter.mack.378" target = "_blank">
-			<img src="static/socialicons/fb-white.png" alt="Facebook" onmouseover="this.src='static/socialicons/fb-black.png';" onmouseout="this.src='static/socialicons/fb-white.png';">
-		</a>
-		<a href="https://twitter.com/PMack9" target = "_blank">
-			<img src="static/socialicons/twitter-white.png" alt="Twitter" onmouseover="this.src='static/socialicons/twitter-black.png';" onmouseout="this.src='static/socialicons/twitter-white.png';">
-		</a>
-		<a href="https://www.instagram.com/pmack9/" target = "_blank">
-			<img src="static/socialicons/instagram-white.png" alt="Instagram" onmouseover="this.src='static/socialicons/instagram-black.png';" onmouseout="this.src='static/socialicons/instagram-white.png';">
-		</a>
-		<a href="mailto:pjmack@umich.edu" target = "_blank">
-			<img src="static/socialicons/mail-white.png" alt="Email" onmouseover="this.src='static/socialicons/mail-black.png';" onmouseout="this.src='static/socialicons/mail-white.png';">
-		</a>
-		</p>
+		<a href="https://www.facebook.com/peter.mack.378" target = "_blank"><i class="fa fa-3x fa-facebook"></i></a>
+		<a href="https://twitter.com/PMack9" target = "_blank"><i class="fa fa-3x fa-twitter"></i></a>
+		<a href="https://www.instagram.com/pmack9/" target = "_blank"><i class="fa fa-3x fa-instagram"></i></a>
+		<a href="mailto:pjmack@umich.edu" target = "_blank"><i class="fa fa-3x fa-envelope"></i></a>
+		<a href="https://github.com/mackpet" target="_blank"><i class="fa fa-3x fa-github"></i></a>
+		<br>
+		<p id="copyright">&copy; Peter Mack, 2016</p>
 	</footer>
 	</div>
 	<script type= "text/javascript" src="static/currentpage.js"></script>
+	<!-- Resizing social icons based on screen size -->
+	<script type= "text/javascript">
+		$(document).ready(function() {
+			var $window = $(window)
+			if ($window.width() < 800){
+				$('.fa').removeClass('fa-3x').addClass('fa-2x');
+			};
+			if ($window.width() >= 800){
+				$('.fa').addClass('fa-3x');
+			};
+		});
+		$(window).on('resize', function(){
+			var $window = $(this)
+			if ($window.width() < 800){
+				$('.fa').removeClass('fa-3x').addClass('fa-2x');
+			};
+			if ($window.width() >= 800){
+				$('.fa').addClass('fa-3x');
+			};
+		});
+	</script>
 </body>
-
-
-
 </html>
